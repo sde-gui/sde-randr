@@ -2,6 +2,7 @@
 _Name=Monitor Settings
 _Comment=Change screen resolution and configure external monitors
 Exec=sde-randr
+TryExec=sde-randr
 Icon=video-display
 Terminal=false
 Type=Application
