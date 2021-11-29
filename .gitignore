@@ -52,3 +52,4 @@ src/xml-purge
 src/sde-randr
 data/sde-randr.desktop
 po/.intltool-merge-cache
+po/.intltool-merge-cache.lock
