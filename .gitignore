@@ -49,10 +49,6 @@ intltool-extract.in
 intltool-merge.in
 intltool-update.in
 src/xml-purge
-src/lxrandr
-data/lxrandr.desktop
-debian/files
-debian/lxrandr.debhelper.log
-debian/lxrandr.substvars
-debian/lxrandr/
+src/sde-randr
+data/sde-randr.desktop
 po/.intltool-merge-cache

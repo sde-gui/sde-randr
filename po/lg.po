@@ -18,67 +18,67 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1410630615.000000\n"
 
-#: ../src/lxrandr.c:87
+#: ../src/sde-randr.c:87
 msgid "Laptop LCD Monitor"
 msgstr "Lutimbe lwa laputopu olw'ekika kya LCD"
 
-#: ../src/lxrandr.c:89
+#: ../src/sde-randr.c:89
 msgid "External VGA Monitor"
 msgstr "Lutimbe olwetongodde olw'ekika kya VGA"
 
-#: ../src/lxrandr.c:89
+#: ../src/sde-randr.c:89
 msgid "VGA Monitor"
 msgstr "Lutimbe lwa kika kya VGA"
 
-#: ../src/lxrandr.c:91
+#: ../src/sde-randr.c:91
 msgid "External DVI Monitor"
 msgstr "Lutimbe olwetongodde olw'ekika kya DVI"
 
-#: ../src/lxrandr.c:91
+#: ../src/sde-randr.c:91
 msgid "DVI Monitor"
 msgstr "Lutimbe lwa kika kya DVI"
 
-#: ../src/lxrandr.c:93
+#: ../src/sde-randr.c:93
 msgid "TV"
 msgstr "TiVvi"
 
-#: ../src/lxrandr.c:95
+#: ../src/sde-randr.c:95
 msgid "Default Monitor"
 msgstr "Olutimbe olwa bulijjo"
 
-#: ../src/lxrandr.c:247 ../src/lxrandr.c:258 ../src/lxrandr.c:883
-#: ../src/lxrandr.c:885
+#: ../src/sde-randr.c:247 ../src/sde-randr.c:258 ../src/sde-randr.c:883
+#: ../src/sde-randr.c:885
 msgid "Auto"
 msgstr "Sisitemu yerondere"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/lxrandr.c:286
+#: ../src/sde-randr.c:286
 msgid "translator-credits"
 msgstr "Kizito Birabwa <kbirabwa@yahoo.co.uk>"
 
-#: ../src/lxrandr.c:294
+#: ../src/sde-randr.c:294
 msgid "SDE-RandR"
 msgstr "SDE-RandR"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
-#: ../src/lxrandr.c:296
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/sde-randr.png", NULL ) );
+#: ../src/sde-randr.c:296
 msgid "Copyright (C) 2008-2014"
 msgstr "Buyinza bw'ebikugizo eby'obwa nannyini (C) 2008-2014"
 
-#: ../src/lxrandr.c:297
-msgid "Monitor configuration tool for LXDE"
-msgstr "Ekiyamba okutegeka olutimbe eky'omu LXDE"
+#: ../src/sde-randr.c:297
+msgid "Monitor configuration tool for SDE"
+msgstr "Ekiyamba okutegeka olutimbe eky'omu SDE"
 
-#: ../src/lxrandr.c:466
+#: ../src/sde-randr.c:466
 msgid "SDE-RandR autostart"
 msgstr "SDE-RandR autostart"
 
-#: ../src/lxrandr.c:467
+#: ../src/sde-randr.c:467
 msgid "Start xrandr with settings done in SDE-RandR"
 msgstr ""
 "Tandisa puloguramu xrandr nga ekolera ku ntegeka ezitegekedwa mu SDE-RandR"
 
-#: ../src/lxrandr.c:511
+#: ../src/sde-randr.c:511
 msgid ""
 "Is everything OK? Confirm within 15 seconds, otherwise previous state will "
 "be restored."
@@ -86,15 +86,15 @@ msgstr ""
 "Ebitegekedwa bituufu? Sistemu ejakukulindira busikonda 15 obikakase oba yo "
 "ezewo entegeka ebaddewo."
 
-#: ../src/lxrandr.c:514
+#: ../src/sde-randr.c:514
 msgid "_OK"
 msgstr "_Kale"
 
-#: ../src/lxrandr.c:515
+#: ../src/sde-randr.c:515
 msgid "_Abort"
 msgstr "_Biveeko"
 
-#: ../src/lxrandr.c:644
+#: ../src/sde-randr.c:644
 msgid ""
 "You cannot turn off all monitors. Otherwise, you will not be able to turn "
 "them on again since this tool is not accessible without monitor."
@@ -102,101 +102,101 @@ msgstr ""
 "Tosobola okugyako ntimbe zonna. Anti obeera tojjakusobola ate okuzizzaako "
 "olw'okubanga ekiyamba kino kyetaagisa lutimbe okukikozesa."
 
-#: ../src/lxrandr.c:665
+#: ../src/sde-randr.c:665
 msgid "Configuration Saved"
 msgstr "Enteekateeka ekazidwa"
 
-#: ../src/lxrandr.c:693
+#: ../src/sde-randr.c:693
 msgid "Unable to get monitor information!"
 msgstr "Nnemedwa okufuna bifa ku lutimbe!"
 
-#: ../src/lxrandr.c:699
+#: ../src/sde-randr.c:699
 msgid "Display Settings"
 msgstr "Ntegeka z'olutimbe"
 
-#: ../src/lxrandr.c:734
+#: ../src/sde-randr.c:734
 msgid "Show the same screen on both laptop LCD and external monitor"
 msgstr "Ekiri ku lutimbe lwa laputopu kirabikire ne ku lutimbe olwetongodde"
 
-#: ../src/lxrandr.c:739
+#: ../src/sde-randr.c:739
 msgid "Turn off laptop LCD and use external monitor only"
 msgstr "Gyako olutimbe lwa laputopu kusigaleko olwetongodde lwokka"
 
-#: ../src/lxrandr.c:744
+#: ../src/sde-randr.c:744
 msgid "Turn off external monitor and use laptop LCD only"
 msgstr "Gyako olutimbe olwetongodde kusigaleko olwa laputopu lwokka"
 
-#: ../src/lxrandr.c:749
+#: ../src/sde-randr.c:749
 msgid "Place external monitor to the right of laptop LCD"
 msgstr ""
 "Olutimbe olwetongodde lube ku ddyo lya lutimbe olw'ekika kya LCD olwa "
 "laputoopu"
 
-#: ../src/lxrandr.c:754
+#: ../src/sde-randr.c:754
 msgid "Place external monitor above of laptop LCD"
 msgstr ""
 "Olutimbe olwetongodde lube waggulu w'olutimbe olw'ekika kya LCD olwa "
 "laputoopu"
 
-#: ../src/lxrandr.c:758
+#: ../src/sde-randr.c:758
 msgid "Quick Options"
 msgstr "Entegeka ez'amangu"
 
-#: ../src/lxrandr.c:767
+#: ../src/sde-randr.c:767
 msgid "Advanced"
 msgstr "Eby'etaagisa bumanyirivu"
 
-#: ../src/lxrandr.c:771
+#: ../src/sde-randr.c:771
 msgid "The following monitor is detected:"
 msgid_plural "The following monitors are detected:"
 msgstr[0] "Ndabyeyo olutimbe luno:"
 msgstr[1] "Ndabyeyo ntimbe zino:"
 
-#: ../src/lxrandr.c:823
+#: ../src/sde-randr.c:823
 msgid "Turn On"
 msgstr "Luteekeko"
 
-#: ../src/lxrandr.c:837
+#: ../src/sde-randr.c:837
 msgid "Position:"
 msgstr "Obusangiro:"
 
-#: ../src/lxrandr.c:841 ../src/lxrandr.c:849
+#: ../src/sde-randr.c:841 ../src/sde-randr.c:849
 msgid "Default"
 msgstr "Ekya bulijjo"
 
-#: ../src/lxrandr.c:842 ../src/lxrandr.c:850
+#: ../src/sde-randr.c:842 ../src/sde-randr.c:850
 msgid "On right"
 msgstr "Ku ddyo"
 
-#: ../src/lxrandr.c:843 ../src/lxrandr.c:851
+#: ../src/sde-randr.c:843 ../src/sde-randr.c:851
 msgid "Above"
 msgstr "Waggulu"
 
-#: ../src/lxrandr.c:844 ../src/lxrandr.c:852
+#: ../src/sde-randr.c:844 ../src/sde-randr.c:852
 msgid "On left"
 msgstr "Ku kkono"
 
-#: ../src/lxrandr.c:845 ../src/lxrandr.c:853
+#: ../src/sde-randr.c:845 ../src/sde-randr.c:853
 msgid "Below"
 msgstr "Wansi"
 
-#: ../src/lxrandr.c:861
+#: ../src/sde-randr.c:861
 msgid "Resolution:"
 msgstr "Ebipimo by'ekifaananyi mu pikiseli:"
 
-#: ../src/lxrandr.c:872
+#: ../src/sde-randr.c:872
 msgid "Refresh Rate:"
 msgstr "Obwangu bw'okulaga bifaananyi:"
 
-#: ../data/lxrandr.desktop.in.h:1
+#: ../data/sde-randr.desktop.in.h:1
 msgid "Change screen resolution and configure external monitors"
 msgstr "Tegeka ntimbe ez'etongodde n'ebipimo bya kifaananyi mu pikiseli"
 
-#: ../data/lxrandr.desktop.in.h:2
+#: ../data/sde-randr.desktop.in.h:2
 msgid "Monitor Settings"
 msgstr "Ntegeka z'olutimbe"
 
-#: ../data/lxrandr.desktop.in.h:3
+#: ../data/sde-randr.desktop.in.h:3
 msgid ""
 "screen;display;tv;extend;projector;xrandr;refresh rate;position;enable;"
 "disable;"

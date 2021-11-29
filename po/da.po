@@ -18,66 +18,66 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1410630615.000000\n"
 
-#: ../src/lxrandr.c:87
+#: ../src/sde-randr.c:87
 msgid "Laptop LCD Monitor"
 msgstr "Bærbar LCD-skærm"
 
-#: ../src/lxrandr.c:89
+#: ../src/sde-randr.c:89
 msgid "External VGA Monitor"
 msgstr "Ekstern VGA-skærm"
 
-#: ../src/lxrandr.c:89
+#: ../src/sde-randr.c:89
 msgid "VGA Monitor"
 msgstr "VGA-skærm"
 
-#: ../src/lxrandr.c:91
+#: ../src/sde-randr.c:91
 msgid "External DVI Monitor"
 msgstr "Ekstern DVI-skærm"
 
-#: ../src/lxrandr.c:91
+#: ../src/sde-randr.c:91
 msgid "DVI Monitor"
 msgstr "DVI-skærm"
 
-#: ../src/lxrandr.c:93
+#: ../src/sde-randr.c:93
 msgid "TV"
 msgstr "TV"
 
-#: ../src/lxrandr.c:95
+#: ../src/sde-randr.c:95
 msgid "Default Monitor"
 msgstr "Standardskærm"
 
-#: ../src/lxrandr.c:247 ../src/lxrandr.c:258 ../src/lxrandr.c:883
-#: ../src/lxrandr.c:885
+#: ../src/sde-randr.c:247 ../src/sde-randr.c:258 ../src/sde-randr.c:883
+#: ../src/sde-randr.c:885
 msgid "Auto"
 msgstr "Auto"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/lxrandr.c:286
+#: ../src/sde-randr.c:286
 msgid "translator-credits"
 msgstr "Joe Hansen"
 
-#: ../src/lxrandr.c:294
+#: ../src/sde-randr.c:294
 msgid "SDE-RandR"
 msgstr "SDE-RandR"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
-#: ../src/lxrandr.c:296
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/sde-randr.png", NULL ) );
+#: ../src/sde-randr.c:296
 msgid "Copyright (C) 2008-2014"
 msgstr "Ophavsret (C) 2008-2014"
 
-#: ../src/lxrandr.c:297
-msgid "Monitor configuration tool for LXDE"
-msgstr "Værktøj til konfiguration af skærme for LXDE"
+#: ../src/sde-randr.c:297
+msgid "Monitor configuration tool for SDE"
+msgstr "Værktøj til konfiguration af skærme for SDE"
 
-#: ../src/lxrandr.c:466
+#: ../src/sde-randr.c:466
 msgid "SDE-RandR autostart"
 msgstr "Automatisk start af SDE-RandR"
 
-#: ../src/lxrandr.c:467
+#: ../src/sde-randr.c:467
 msgid "Start xrandr with settings done in SDE-RandR"
 msgstr "Start xrandr med indstillinger sat i SDE-RandR"
 
-#: ../src/lxrandr.c:511
+#: ../src/sde-randr.c:511
 msgid ""
 "Is everything OK? Confirm within 15 seconds, otherwise previous state will "
 "be restored."
@@ -85,15 +85,15 @@ msgstr ""
 "Er alt OK? Bekræft inden 15 sekunder ellers vil den forrige tilstand blive "
 "gendannet."
 
-#: ../src/lxrandr.c:514
+#: ../src/sde-randr.c:514
 msgid "_OK"
 msgstr "_OK"
 
-#: ../src/lxrandr.c:515
+#: ../src/sde-randr.c:515
 msgid "_Abort"
 msgstr "_Afbryd"
 
-#: ../src/lxrandr.c:644
+#: ../src/sde-randr.c:644
 msgid ""
 "You cannot turn off all monitors. Otherwise, you will not be able to turn "
 "them on again since this tool is not accessible without monitor."
@@ -101,97 +101,97 @@ msgstr ""
 "Du kan ikke slukke for alle skærme. Ellers vil du ikke være i stand til at "
 "tænde dem igen, da dette værktøj ikke er utilgængeligt uden en skærm."
 
-#: ../src/lxrandr.c:665
+#: ../src/sde-randr.c:665
 msgid "Configuration Saved"
 msgstr "Opsætning gemt"
 
-#: ../src/lxrandr.c:693
+#: ../src/sde-randr.c:693
 msgid "Unable to get monitor information!"
 msgstr "Kunne ikke få oplysninger om skærmen!"
 
-#: ../src/lxrandr.c:699
+#: ../src/sde-randr.c:699
 msgid "Display Settings"
 msgstr "Indstillinger for skærm"
 
-#: ../src/lxrandr.c:734
+#: ../src/sde-randr.c:734
 msgid "Show the same screen on both laptop LCD and external monitor"
 msgstr "Vis det samme billede på både bærbar-LCD og eksterne skærm"
 
-#: ../src/lxrandr.c:739
+#: ../src/sde-randr.c:739
 msgid "Turn off laptop LCD and use external monitor only"
 msgstr "Sluk bærbarens LCD og anvend kun ekstern skærm"
 
-#: ../src/lxrandr.c:744
+#: ../src/sde-randr.c:744
 msgid "Turn off external monitor and use laptop LCD only"
 msgstr "Sluk ekstern skærm og anvend kun bærbarens LCD"
 
-#: ../src/lxrandr.c:749
+#: ../src/sde-randr.c:749
 msgid "Place external monitor to the right of laptop LCD"
 msgstr "Placer ekstern skærm til højre for bærbar-LCD"
 
-#: ../src/lxrandr.c:754
+#: ../src/sde-randr.c:754
 msgid "Place external monitor above of laptop LCD"
 msgstr "Placer ekstern skærm ovenover bærbar-LCD"
 
-#: ../src/lxrandr.c:758
+#: ../src/sde-randr.c:758
 msgid "Quick Options"
 msgstr "Hurtige indstillinger"
 
-#: ../src/lxrandr.c:767
+#: ../src/sde-randr.c:767
 msgid "Advanced"
 msgstr "Avanceret"
 
-#: ../src/lxrandr.c:771
+#: ../src/sde-randr.c:771
 msgid "The following monitor is detected:"
 msgid_plural "The following monitors are detected:"
 msgstr[0] "Følgende skærm er fundet:"
 msgstr[1] "Følgende skærme er fundet:"
 
-#: ../src/lxrandr.c:823
+#: ../src/sde-randr.c:823
 msgid "Turn On"
 msgstr "Tænd"
 
-#: ../src/lxrandr.c:837
+#: ../src/sde-randr.c:837
 msgid "Position:"
 msgstr "Placering:"
 
-#: ../src/lxrandr.c:841 ../src/lxrandr.c:849
+#: ../src/sde-randr.c:841 ../src/sde-randr.c:849
 msgid "Default"
 msgstr "Standard"
 
-#: ../src/lxrandr.c:842 ../src/lxrandr.c:850
+#: ../src/sde-randr.c:842 ../src/sde-randr.c:850
 msgid "On right"
 msgstr "Til højre"
 
-#: ../src/lxrandr.c:843 ../src/lxrandr.c:851
+#: ../src/sde-randr.c:843 ../src/sde-randr.c:851
 msgid "Above"
 msgstr "Ovenover"
 
-#: ../src/lxrandr.c:844 ../src/lxrandr.c:852
+#: ../src/sde-randr.c:844 ../src/sde-randr.c:852
 msgid "On left"
 msgstr "Til venstre"
 
-#: ../src/lxrandr.c:845 ../src/lxrandr.c:853
+#: ../src/sde-randr.c:845 ../src/sde-randr.c:853
 msgid "Below"
 msgstr "Nedenunder"
 
-#: ../src/lxrandr.c:861
+#: ../src/sde-randr.c:861
 msgid "Resolution:"
 msgstr "Opløsning:"
 
-#: ../src/lxrandr.c:872
+#: ../src/sde-randr.c:872
 msgid "Refresh Rate:"
 msgstr "Opdateringshastighed:"
 
-#: ../data/lxrandr.desktop.in.h:1
+#: ../data/sde-randr.desktop.in.h:1
 msgid "Change screen resolution and configure external monitors"
 msgstr "Skift skærmopløsning og konfigurer eksterne skærme"
 
-#: ../data/lxrandr.desktop.in.h:2
+#: ../data/sde-randr.desktop.in.h:2
 msgid "Monitor Settings"
 msgstr "Skærmopsætning"
 
-#: ../data/lxrandr.desktop.in.h:3
+#: ../data/sde-randr.desktop.in.h:3
 msgid ""
 "screen;display;tv;extend;projector;xrandr;refresh rate;position;enable;"
 "disable;"

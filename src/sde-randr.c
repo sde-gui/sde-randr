@@ -1,5 +1,5 @@
 /*
- *      lxrandr.c - Easy-to-use XRandR GUI frontend for LXDE project
+ *      sde-randr.c - Easy-to-use XRandR GUI frontend for SDE project
  *
  *      Copyright (C) 2008 Hong Jen Yee(PCMan) <pcman.tw@gmail.com>
  *      Copyright (C) 2011 Julien Lavergne <julien.lavergne@gmail.com>
@@ -316,10 +316,10 @@ static void on_about( GtkButton* btn, gpointer parent )
     gtk_container_set_border_width ( ( GtkContainer*)about_dlg , 2 );
     gtk_about_dialog_set_version ( (GtkAboutDialog*)about_dlg, VERSION );
     gtk_about_dialog_set_program_name ( (GtkAboutDialog*)about_dlg, _( "SDE-RandR" ) );
-    //gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
+    //gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/sde-randr.png", NULL ) );
     gtk_about_dialog_set_logo_icon_name( (GtkAboutDialog*)about_dlg, "video-display" );
     gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2008-2014" ) );
-    gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Monitor configuration tool for LXDE" ) );
+    gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Monitor configuration tool for SDE" ) );
     gtk_about_dialog_set_license ( (GtkAboutDialog*)about_dlg, "This program is free software; you can redistribute it and/or\nmodify it under the terms of the GNU General Public License\nas published by the Free Software Foundation; either version 2\nof the License, or (at your option) any later version.\n\nmw program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with mw program; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA." );
     gtk_about_dialog_set_website ( (GtkAboutDialog*)about_dlg, "http://lxde.org/" );
     gtk_about_dialog_set_authors ( (GtkAboutDialog*)about_dlg, authors );

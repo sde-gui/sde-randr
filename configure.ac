@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT([lxrandr],[0.3.2])
+AC_INIT([sde-randr],[0.3.2])
 AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign no-dist-gzip dist-xz])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([.])
@@ -55,7 +55,7 @@ if test x"$enable_more_warnings" = x"yes"; then
 fi
 AC_SUBST(ADDITIONAL_FLAGS)
 
-GETTEXT_PACKAGE=lxrandr
+GETTEXT_PACKAGE=sde-randr
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 
@@ -88,7 +88,7 @@ AM_CONDITIONAL(ENABLE_REGENERATE_MAN, test "x$enable_man" != "xno")
 
 AC_ARG_ENABLE(debug,
     [AC_HELP_STRING([--enable-debug],
-        [build lxrandr with debug support @<:@default=no@:>@])],
+        [build sde-randr with debug support @<:@default=no@:>@])],
     [enable_debug="${enableval}"],
     [enable_debug=no]
 )

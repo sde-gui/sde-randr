@@ -9,24 +9,24 @@
     </copyright>
     <date>March  2, 2008</date>
   </refentryinfo>
-  <refmeta>    <refentrytitle>LXRANDR</refentrytitle>
-<refmiscinfo class="source">http://LXDE.org</refmiscinfo>
+  <refmeta>    <refentrytitle>SDE-RANDR</refentrytitle>
+<refmiscinfo class="source">https://github.com/sde-gui/</refmiscinfo>
 
     <manvolnum>1</manvolnum>
   </refmeta>
-  <refnamediv>    <refname>lxrandr</refname>
+  <refnamediv>    <refname>sde-randr</refname>
 
-    <refpurpose>a GTK+2 interface to XRandR for LXDE desktop.</refpurpose>
+    <refpurpose>a GTK+2 interface to XRandR for SDE desktop.</refpurpose>
   </refnamediv>
-  <refsynopsisdiv>    <cmdsynopsis>      <command>lxrandr</command>
+  <refsynopsisdiv>    <cmdsynopsis>      <command>sde-randr</command>
     </cmdsynopsis>
   </refsynopsisdiv>
   <refsect1>    <title>DESCRIPTION</title>
 
     <para>This manual page documents briefly the
-      <command>lxrandr</command> command.</para>
+      <command>sde-randr</command> command.</para>
 
-    <para><command>lxrandr</command> is a program that change the 
+    <para><command>sde-randr</command> is a program that change the 
     resolution
     and frequency of the monitor using a simple interface.
     </para>

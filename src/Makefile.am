@@ -1,13 +1,13 @@
-lxrandr_CFLAGS = \
+sde_randr_CFLAGS = \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	$(GTK_CFLAGS) \
 	$(ADDITIONAL_FLAGS)
 
-bin_PROGRAMS = lxrandr
+bin_PROGRAMS = sde-randr
 
-lxrandr_SOURCES = \
-	lxrandr.c 
+sde_randr_SOURCES = \
+	sde-randr.c 
 
-lxrandr_LDADD = @GTK_LIBS@ $(INTLLIBS)
+sde_randr_LDADD = @GTK_LIBS@ $(INTLLIBS)
 

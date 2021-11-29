@@ -1,4 +1,4 @@
-man_in_files = lxrandr.xml
+man_in_files = sde-randr.xml
 
 man_MANS = $(man_in_files:.xml=.1)
 
@@ -14,7 +14,7 @@ $(man_MANS):
 	@false
 endif
 
-desktop_in_files = lxrandr.desktop.in
+desktop_in_files = sde-randr.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 desktopdir=$(datadir)/applications
