@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sde-randr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 00:01+0700\n"
-"PO-Revision-Date: 2021-11-30 00:05+0700\n"
+"POT-Creation-Date: 2021-11-30 00:29+0700\n"
+"PO-Revision-Date: 2021-11-30 00:32+0700\n"
 "Last-Translator: Vadim Ushakov <igeekless@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -48,8 +48,8 @@ msgstr "ТВ"
 msgid "Default Monitor"
 msgstr "Дисплей по умолчанию"
 
-#: ../src/sde-randr.c:271 ../src/sde-randr.c:282 ../src/sde-randr.c:887
-#: ../src/sde-randr.c:889
+#: ../src/sde-randr.c:271 ../src/sde-randr.c:282 ../src/sde-randr.c:891
+#: ../src/sde-randr.c:893
 msgid "Auto"
 msgstr "Автоматически"
 
@@ -57,6 +57,7 @@ msgstr "Автоматически"
 #: ../src/sde-randr.c:303
 msgid "translator-credits"
 msgstr ""
+"Vadim Ushakov <igeekless@gmail.com>\n"
 "Vitaly Pashkov <admin@fluda.net>\n"
 "Andriy Grytsenko <andrej@rep.kiev.ua>"
 
@@ -82,21 +83,28 @@ msgstr "Запуск xrandr c настройками сделанными в SDE
 
 #: ../src/sde-randr.c:528
 msgid ""
-"Is everything OK? Confirm within 15 seconds, otherwise previous state will "
-"be restored."
+"Your desktop has been reconfigured. Do you want to keep these settings?\n"
+"\n"
+"Confirm within 15 seconds, otherwise the previous state will be restored."
 msgstr ""
-"Удовлетворительно? Подтвердите в течении 15 секунд, или предыдущие настройки "
-"будут возвращены автоматически."
+"Конфигурация рабочего стола изменена. Сохранить эти изменения?\n"
+"\n"
+"Подтвердите в течение 15 секунд, или предыдущие настройки будут возвращены "
+"автоматически."
 
-#: ../src/sde-randr.c:531
+#: ../src/sde-randr.c:532 ../src/sde-randr.c:668 ../src/sde-randr.c:702
+msgid "Display Settings"
+msgstr "Настройки дисплея"
+
+#: ../src/sde-randr.c:534
 msgid "_OK"
 msgstr "_ОК"
 
-#: ../src/sde-randr.c:532
+#: ../src/sde-randr.c:535
 msgid "_Abort"
 msgstr "_Отмена"
 
-#: ../src/sde-randr.c:643
+#: ../src/sde-randr.c:646
 msgid ""
 "You cannot turn off all monitors. Otherwise, you will not be able to turn "
 "them on again since this tool is not accessible without monitor."
@@ -104,91 +112,87 @@ msgstr ""
 "Вы не можете выключить все дисплеи. Иначе вы не сможете включить их снова, "
 "так как эта утилита недоступна без дисплея."
 
-#: ../src/sde-randr.c:664
+#: ../src/sde-randr.c:667
 msgid "Configuration Saved"
 msgstr "Настройки сохранены"
 
-#: ../src/sde-randr.c:692
+#: ../src/sde-randr.c:696
 msgid "Unable to get monitor information!"
 msgstr "Не удалось получить информацию о дисплее!"
 
-#: ../src/sde-randr.c:698
-msgid "Display Settings"
-msgstr "Настройки дисплея"
-
-#: ../src/sde-randr.c:733
+#: ../src/sde-randr.c:737
 msgid "Show the same screen on both laptop LCD and external monitor"
 msgstr ""
 "Показывать одинаковый экран на ЖК дисплее ноутбука и на внешнем дисплее"
 
-#: ../src/sde-randr.c:738
+#: ../src/sde-randr.c:742
 msgid "Turn off laptop LCD and use external monitor only"
 msgstr "Отключить ЖК дисплей ноутбука и использовать только внешний дисплей"
 
-#: ../src/sde-randr.c:743
+#: ../src/sde-randr.c:747
 msgid "Turn off external monitor and use laptop LCD only"
 msgstr "Отключить внешний дисплей и использовать только ЖК дисплей ноутбука"
 
-#: ../src/sde-randr.c:748
+#: ../src/sde-randr.c:752
 msgid "Place external monitor to the left of laptop LCD"
 msgstr "Поместить внешний дисплей слева от ЖК дисплея ноутбука"
 
-#: ../src/sde-randr.c:753
+#: ../src/sde-randr.c:757
 msgid "Place external monitor to the right of laptop LCD"
 msgstr "Поместить внешний дисплей справа от ЖК дисплея ноутбука"
 
-#: ../src/sde-randr.c:758
+#: ../src/sde-randr.c:762
 msgid "Place external monitor above of laptop LCD"
 msgstr "Поместить внешний дисплей сверху над ЖК дисплеем ноутбука"
 
-#: ../src/sde-randr.c:762
+#: ../src/sde-randr.c:766
 msgid "Quick Options"
 msgstr "Быстрые настройки"
 
-#: ../src/sde-randr.c:771
+#: ../src/sde-randr.c:775
 msgid "Advanced"
 msgstr "Дополнительно"
 
-#: ../src/sde-randr.c:775
+#: ../src/sde-randr.c:779
 msgid "The following monitor is detected:"
 msgid_plural "The following monitors are detected:"
 msgstr[0] "Обнаружен следующий дисплей:"
 msgstr[1] "Обнаружены следующие дисплеи:"
 msgstr[2] "Обнаружены следующие дисплеи:"
 
-#: ../src/sde-randr.c:827
+#: ../src/sde-randr.c:831
 msgid "Turn On"
 msgstr "Включить"
 
-#: ../src/sde-randr.c:841
+#: ../src/sde-randr.c:845
 msgid "Position:"
 msgstr "Положение:"
 
-#: ../src/sde-randr.c:845 ../src/sde-randr.c:853
+#: ../src/sde-randr.c:849 ../src/sde-randr.c:857
 msgid "Default"
 msgstr "Базовое"
 
-#: ../src/sde-randr.c:846 ../src/sde-randr.c:854
+#: ../src/sde-randr.c:850 ../src/sde-randr.c:858
 msgid "On right"
 msgstr "Справа"
 
-#: ../src/sde-randr.c:847 ../src/sde-randr.c:855
+#: ../src/sde-randr.c:851 ../src/sde-randr.c:859
 msgid "Above"
 msgstr "Выше"
 
-#: ../src/sde-randr.c:848 ../src/sde-randr.c:856
+#: ../src/sde-randr.c:852 ../src/sde-randr.c:860
 msgid "On left"
 msgstr "Слева"
 
-#: ../src/sde-randr.c:849 ../src/sde-randr.c:857
+#: ../src/sde-randr.c:853 ../src/sde-randr.c:861
 msgid "Below"
 msgstr "Ниже"
 
-#: ../src/sde-randr.c:865
+#: ../src/sde-randr.c:869
 msgid "Resolution:"
 msgstr "Разрешение:"
 
-#: ../src/sde-randr.c:876
+#: ../src/sde-randr.c:880
 msgid "Refresh Rate:"
 msgstr "Частота обновления:"
 
