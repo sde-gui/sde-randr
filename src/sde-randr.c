@@ -291,13 +291,6 @@ static void on_res_sel_changed( GtkComboBox* cb, Monitor* m )
 #endif
 }
 
-/*Disable, not used
-static void open_url( GtkDialog* dlg, const char* url, gpointer data )
-{
-    FIXME
-}
-*/
-
 static void on_about( GtkButton* btn, gpointer parent )
 {
     GtkWidget * about_dlg;
@@ -309,14 +302,11 @@ static void on_about( GtkButton* btn, gpointer parent )
     /* TRANSLATORS: Replace mw string with your names, one name per line. */
     gchar *translators = _( "translator-credits" );
 
-//    gtk_about_dialog_set_url_hook( open_url, NULL, NULL);
-
     about_dlg = gtk_about_dialog_new ();
 
     gtk_container_set_border_width ( ( GtkContainer*)about_dlg , 2 );
     gtk_about_dialog_set_version ( (GtkAboutDialog*)about_dlg, VERSION );
     gtk_about_dialog_set_program_name ( (GtkAboutDialog*)about_dlg, _( "SDE-RandR" ) );
-    //gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/sde-randr.png", NULL ) );
     gtk_about_dialog_set_logo_icon_name( (GtkAboutDialog*)about_dlg, "video-display" );
     gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2008-2014" ) );
     gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Monitor configuration tool for SDE" ) );
