@@ -525,8 +525,11 @@ static void set_xrandr_info()
         confirmation = gtk_message_dialog_new(GTK_WINDOW(dlg), GTK_DIALOG_MODAL,
                                               GTK_MESSAGE_QUESTION,
                                               GTK_BUTTONS_NONE,
-                                              _("Is everything OK? Confirm within 15 seconds,"
-                                                " otherwise previous state will be restored."));
+                                              _("Your desktop has been reconfigured. Do you want "
+                                                "to keep these settings?\n\n"
+                                                "Confirm within 15 seconds, otherwise the previous "
+                                                "state will be restored."));
+        gtk_window_set_title(GTK_WINDOW(confirmation), _("Display Settings"));
         gtk_dialog_add_buttons(GTK_DIALOG(confirmation),
                                _("_OK"), GTK_RESPONSE_ACCEPT,
                                _("_Abort"), GTK_RESPONSE_CANCEL,
@@ -662,6 +665,7 @@ static void on_response( GtkDialog* dialog, int response, gpointer user_data )
                                       GTK_MESSAGE_INFO, 
                                       GTK_BUTTONS_OK, 
                                       _("Configuration Saved") );
+        gtk_window_set_title(GTK_WINDOW(msg), _("Display Settings"));
         gtk_dialog_run( GTK_DIALOG(msg) );
         gtk_widget_destroy( msg );
     }
