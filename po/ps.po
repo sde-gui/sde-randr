@@ -57,7 +57,7 @@ msgid "translator-credits"
 msgstr ""
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
+msgid "SDE-RandR"
 msgstr ""
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
@@ -70,11 +70,11 @@ msgid "Monitor configuration tool for LXDE"
 msgstr ""
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
+msgid "SDE-RandR autostart"
 msgstr ""
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
 msgstr ""
 
 #: ../src/lxrandr.c:511

@@ -62,8 +62,8 @@ msgstr ""
 "Ριζόπουλος Γιώργος <georgerizopoulos28@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -76,12 +76,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Εργαλείο διαμόρφωσης οθόνης για το LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "Αυτόματη εκκίνηση του LXRandR"
+msgid "SDE-RandR autostart"
+msgstr "Αυτόματη εκκίνηση του SDE-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "Εκκίνηση του xrandr με τις ρυθμίσεις του LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "Εκκίνηση του xrandr με τις ρυθμίσεις του SDE-RandR"
 
 #: ../src/lxrandr.c:511
 msgid ""

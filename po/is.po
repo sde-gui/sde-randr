@@ -56,8 +56,8 @@ msgid "translator-credits"
 msgstr "Sveinn í Felli, sv1@fellsnet.is"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -69,12 +69,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Skjástillingatól fyrir LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "Sjálfræsing LXRandR"
+msgid "SDE-RandR autostart"
+msgstr "Sjálfræsing SDE-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "Ræsa xrandr með stillingum gerðum í LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "Ræsa xrandr með stillingum gerðum í SDE-RandR"
 
 #: ../src/lxrandr.c:511
 msgid ""

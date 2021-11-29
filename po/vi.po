@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: LXRandR\n"
+"Project-Id-Version: SDE-RandR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:07+0300\n"
 "PO-Revision-Date: 2014-12-05 10:55+0000\n"
@@ -59,8 +59,8 @@ msgid "translator-credits"
 msgstr "Tran Duy Hung <nguyentieuhau@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -73,12 +73,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Công cụ cấu hình màn hình cho LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "Tự khởi động LXRandR"
+msgid "SDE-RandR autostart"
+msgstr "Tự khởi động SDE-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "Khởi động xrandr với những thiết lập trong LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "Khởi động xrandr với những thiết lập trong SDE-RandR"
 
 #: ../src/lxrandr.c:511
 msgid ""

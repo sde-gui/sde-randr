@@ -1,10 +1,10 @@
-# Danish translation LXRandR.
-# Copyright (C) 2010 LXRandR & nedenstående oversættere.
-# This file is distributed under the same license as the LXRandR package.
+# Danish translation SDE-RandR.
+# Copyright (C) 2010 SDE-RandR & nedenstående oversættere.
+# This file is distributed under the same license as the SDE-RandR package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: LXRandR.\n"
+"Project-Id-Version: SDE-RandR.\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:07+0300\n"
 "PO-Revision-Date: 2018-10-01 23:09+0000\n"
@@ -57,8 +57,8 @@ msgid "translator-credits"
 msgstr "Joe Hansen"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -70,12 +70,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Værktøj til konfiguration af skærme for LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "Automatisk start af LXRandR"
+msgid "SDE-RandR autostart"
+msgstr "Automatisk start af SDE-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "Start xrandr med indstillinger sat i LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "Start xrandr med indstillinger sat i SDE-RandR"
 
 #: ../src/lxrandr.c:511
 msgid ""

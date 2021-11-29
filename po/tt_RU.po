@@ -58,8 +58,8 @@ msgid "translator-credits"
 msgstr "Ainur Shakirov <ainur.shakirov.tt@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -72,12 +72,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "LXDE өчен монитор көйләү коралы"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "LXRandR кушымтасын автоматик җибәрү"
+msgid "SDE-RandR autostart"
+msgstr "SDE-RandR кушымтасын автоматик җибәрү"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "xrandr кушымтасын LXRandR көйләүләре белән җибәрергә"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "xrandr кушымтасын SDE-RandR көйләүләре белән җибәрергә"
 
 #: ../src/lxrandr.c:511
 msgid ""

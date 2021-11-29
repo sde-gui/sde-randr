@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: LXRandR 0.1\n"
+"Project-Id-Version: SDE-RandR 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:07+0300\n"
 "PO-Revision-Date: 2015-03-21 23:14+0000\n"
@@ -59,8 +59,8 @@ msgstr ""
 "Walter Cheuk <wwycheuk@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR螢幕相關設定"
+msgid "SDE-RandR"
+msgstr "SDE-RandR螢幕相關設定"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -72,12 +72,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "LXDE 的螢幕設定工具"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "LXRandR 自動啟動"
+msgid "SDE-RandR autostart"
+msgstr "SDE-RandR 自動啟動"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "在 LXRandR 完成設定後啟動 xrandr"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "在 SDE-RandR 完成設定後啟動 xrandr"
 
 #: ../src/lxrandr.c:511
 msgid ""

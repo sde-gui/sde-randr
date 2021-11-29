@@ -61,8 +61,8 @@ msgstr ""
 "Sérgio Marques <smarquespt@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -74,11 +74,11 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Ferramenta de configuração do monitor para o LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "Inicio automático do LXRandR"
+msgid "SDE-RandR autostart"
+msgstr "Inicio automático do SDE-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
 msgstr "Iniciar xrandr com as definições de LXrandR"
 
 #: ../src/lxrandr.c:511

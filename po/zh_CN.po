@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: LXRandR 0.1\n"
+"Project-Id-Version: SDE-RandR 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:07+0300\n"
 "PO-Revision-Date: 2015-07-28 12:32+0000\n"
@@ -61,8 +61,8 @@ msgstr ""
 "Wylmer Wang <wantinghard@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -75,12 +75,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "LXDE 的屏幕配置工具"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "LXRandR 自动启动"
+msgid "SDE-RandR autostart"
+msgstr "SDE-RandR 自动启动"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "以 LXRandR 中完成的设置启动 xrandr"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "以 SDE-RandR 中完成的设置启动 xrandr"
 
 #: ../src/lxrandr.c:511
 msgid ""

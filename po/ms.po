@@ -62,8 +62,8 @@ msgstr ""
 "Umarzuki Bin Mochlis Moktar <umarzuki@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -76,11 +76,11 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Peranti konfigurasi monitor untuk LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
+msgid "SDE-RandR autostart"
 msgstr ""
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
 msgstr ""
 
 #: ../src/lxrandr.c:511

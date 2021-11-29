@@ -61,8 +61,8 @@ msgstr ""
 "Proxecto Trasno <proxecto@trasno.net>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
-msgstr "LXRandR"
+msgid "SDE-RandR"
+msgstr "SDE-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
 #: ../src/lxrandr.c:296
@@ -74,12 +74,12 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Ferramenta de configuración de monitores para LXDE"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
-msgstr "Inicio automático de LXRandR"
+msgid "SDE-RandR autostart"
+msgstr "Inicio automático de SDE-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
-msgstr "Iniciar «xrandr» cos axustes feitos en LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
+msgstr "Iniciar «xrandr» cos axustes feitos en SDE-RandR"
 
 #: ../src/lxrandr.c:511
 msgid ""

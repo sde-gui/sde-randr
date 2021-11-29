@@ -1,10 +1,10 @@
-# Serbian translation for LXRandR package
+# Serbian translation for SDE-RandR package
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the LXRandR package.
+# This file is distributed under the same license as the SDE-RandR package.
 # Jay A. Fleming <tito.nehru.naser@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: LXRandR 0.1.x\n"
+"Project-Id-Version: SDE-RandR 0.1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:07+0300\n"
 "PO-Revision-Date: 2014-12-05 10:50+0000\n"
@@ -60,7 +60,7 @@ msgid "translator-credits"
 msgstr "Serbian (sr) — Jay A. Fleming <tito.nehru.naser@gmail.com>"
 
 #: ../src/lxrandr.c:294
-msgid "LXRandR"
+msgid "SDE-RandR"
 msgstr "LIks-RandR"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
@@ -74,11 +74,11 @@ msgid "Monitor configuration tool for LXDE"
 msgstr "Program za podešavanje monitora u LIks-DE radnom okruženju"
 
 #: ../src/lxrandr.c:466
-msgid "LXRandR autostart"
+msgid "SDE-RandR autostart"
 msgstr "Sam pokreni LIks-RandR"
 
 #: ../src/lxrandr.c:467
-msgid "Start xrandr with settings done in LXRandR"
+msgid "Start xrandr with settings done in SDE-RandR"
 msgstr "Pokreni „xrandr“ koristeći LIks-RandR postavke"
 
 #: ../src/lxrandr.c:511

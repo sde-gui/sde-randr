@@ -315,7 +315,7 @@ static void on_about( GtkButton* btn, gpointer parent )
 
     gtk_container_set_border_width ( ( GtkContainer*)about_dlg , 2 );
     gtk_about_dialog_set_version ( (GtkAboutDialog*)about_dlg, VERSION );
-    gtk_about_dialog_set_program_name ( (GtkAboutDialog*)about_dlg, _( "LXRandR" ) );
+    gtk_about_dialog_set_program_name ( (GtkAboutDialog*)about_dlg, _( "SDE-RandR" ) );
     //gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxrandr.png", NULL ) );
     gtk_about_dialog_set_logo_icon_name( (GtkAboutDialog*)about_dlg, "video-display" );
     gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2008-2014" ) );
@@ -488,8 +488,8 @@ static void save_configuration()
     kf = g_key_file_new();
 
     g_key_file_set_string( kf, grp, "Type", "Application" );
-    g_key_file_set_string( kf, grp, "Name", _("LXRandR autostart") );
-    g_key_file_set_string( kf, grp, "Comment", _("Start xrandr with settings done in LXRandR") );
+    g_key_file_set_string( kf, grp, "Name", _("SDE-RandR autostart") );
+    g_key_file_set_string( kf, grp, "Comment", _("Start xrandr with settings done in SDE-RandR") );
     g_key_file_set_string( kf, grp, "Exec", cmd->str );
     if (de_name){
         g_key_file_set_string( kf, grp, "OnlyShowIn", de_name );
