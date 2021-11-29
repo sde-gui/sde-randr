@@ -33,6 +33,13 @@
 #include <string.h>
 #include <stdlib.h>
 
+/* DE name to be used in OnlyShowIn.
+   TODO: Make it run-time configurable, so the application can be used under any DE or WM.
+*/
+const char *de_name = "SDE";
+/* Save the randr command to ~/.config/autostart/<autostart_file> */
+const char *autostart_file = "sde-randr-autostart.desktop";
+
 typedef enum
 {
     QUICK_PLACEMENT_SAME_PLACE,
@@ -484,12 +491,14 @@ static void save_configuration()
     g_key_file_set_string( kf, grp, "Name", _("LXRandR autostart") );
     g_key_file_set_string( kf, grp, "Comment", _("Start xrandr with settings done in LXRandR") );
     g_key_file_set_string( kf, grp, "Exec", cmd->str );
-    g_key_file_set_string( kf, grp, "OnlyShowIn", "LXDE" );
+    if (de_name){
+        g_key_file_set_string( kf, grp, "OnlyShowIn", de_name );
+    }
 
     data = g_key_file_to_data(kf, &len, NULL);
     file = g_build_filename(  g_get_user_config_dir(), 
                               "autostart", 
-                              "lxrandr-autostart.desktop", 
+                              autostart_file,
                               NULL );
     /* save it to user-specific autostart dir */
     g_debug("save to: %s", file);
