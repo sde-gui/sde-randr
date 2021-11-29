@@ -35,6 +35,17 @@
 
 typedef enum
 {
+    QUICK_PLACEMENT_SAME_PLACE,
+    QUICK_PLACEMENT_EXTERNAL_ONLY,
+    QUICK_PLACEMENT_LVDS_ONLY,
+    QUICK_PLACEMENT_LEFT,
+    QUICK_PLACEMENT_RIGHT,
+    QUICK_PLACEMENT_ABOVE
+} QuickPlacement;
+
+
+typedef enum
+{
     PLACEMENT_DEFAULT,
     PLACEMENT_RIGHT,
     PLACEMENT_ABOVE,
@@ -576,57 +587,39 @@ static void choose_max_resolution( Monitor* m )
 
 static void on_quick_option( GtkButton* btn, gpointer data )
 {
-    GSList* l;
     int option = GPOINTER_TO_INT(data);
-    switch( option )
+    GSList* l;
+
+    for( l = monitors; l; l = l->next )
     {
-    case 1: // turn on both
-        for( l = monitors; l; l = l->next )
-        {
-            Monitor* m = (Monitor*)l->data;
-            choose_max_resolution( m );
-            gtk_toggle_button_set_active( GTK_TOGGLE_BUTTON(m->enable), TRUE );
+        Monitor* m = (Monitor*)l->data;
+        gboolean set_active = TRUE;
+        choose_max_resolution( m );
+        if (option == QUICK_PLACEMENT_EXTERNAL_ONLY) {
+            set_active = (m != LVDS); /* turn on external, turn off LVDS  */
+        } else if (option == QUICK_PLACEMENT_LVDS_ONLY) {
+            set_active = (m == LVDS); /* turn off external, turn on LVDS  */
         }
-        break;
-    case 2: // external monitor only
-        for( l = monitors; l; l = l->next )
+        gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(m->enable), set_active);
+        if (m != LVDS)
         {
-            Monitor* m = (Monitor*)l->data;
-            choose_max_resolution( m );
-            gtk_toggle_button_set_active( GTK_TOGGLE_BUTTON(m->enable), m != LVDS );
+            switch( option )
+            {
+                case QUICK_PLACEMENT_LEFT:
+                    gtk_combo_box_set_active(GTK_COMBO_BOX(m->pos_combo), PLACEMENT_LEFT);
+                    break;
+                case QUICK_PLACEMENT_RIGHT:
+                    gtk_combo_box_set_active(GTK_COMBO_BOX(m->pos_combo), PLACEMENT_RIGHT);
+                    break;
+                case QUICK_PLACEMENT_ABOVE:
+                    gtk_combo_box_set_active(GTK_COMBO_BOX(m->pos_combo), PLACEMENT_ABOVE);
+                    break;
+                default:
+                    break;
+            }
         }
-        break;
-    case 3: // laptop panel - LVDS only
-        for( l = monitors; l; l = l->next )
-        {
-            Monitor* m = (Monitor*)l->data;
-            choose_max_resolution( m );
-            gtk_toggle_button_set_active( GTK_TOGGLE_BUTTON(m->enable), m == LVDS );
-        }
-        break;
-    case 4: // external right of LVDS
-        for( l = monitors; l; l = l->next )
-        {
-            Monitor* m = (Monitor*)l->data;
-            choose_max_resolution( m );
-            gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(m->enable), TRUE);
-            if (m != LVDS)
-                gtk_combo_box_set_active(GTK_COMBO_BOX(m->pos_combo), PLACEMENT_RIGHT);
-        }
-        break;
-    case 5: // external above of LVDS
-        for( l = monitors; l; l = l->next )
-        {
-            Monitor* m = (Monitor*)l->data;
-            choose_max_resolution( m );
-            gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(m->enable), TRUE);
-            if (m != LVDS)
-                gtk_combo_box_set_active(GTK_COMBO_BOX(m->pos_combo), PLACEMENT_ABOVE);
-        }
-        break;
-    default:
-        return;
     }
+
 //    gtk_dialog_response( GTK_DIALOG(dlg), GTK_RESPONSE_OK );
 //    set_xrandr_info();
 }
@@ -739,27 +732,32 @@ int main(int argc, char** argv)
         gtk_container_set_border_width( GTK_CONTAINER(vbox), 8 );
 
         btn = gtk_radio_button_new_with_label(NULL, _("Show the same screen on both laptop LCD and external monitor"));
-        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(1) );
+        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(QUICK_PLACEMENT_SAME_PLACE) );
         gtk_box_pack_start( GTK_BOX(vbox), btn, FALSE, TRUE , 4);
 
         btn = gtk_radio_button_new_with_label_from_widget(GTK_RADIO_BUTTON(btn),
                         _("Turn off laptop LCD and use external monitor only"));
-        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(2) );
+        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(QUICK_PLACEMENT_EXTERNAL_ONLY) );
         gtk_box_pack_start( GTK_BOX(vbox), btn, FALSE, TRUE , 4);
 
         btn = gtk_radio_button_new_with_label_from_widget(GTK_RADIO_BUTTON(btn),
                         _("Turn off external monitor and use laptop LCD only"));
-        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(3) );
+        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(QUICK_PLACEMENT_LVDS_ONLY) );
+        gtk_box_pack_start( GTK_BOX(vbox), btn, FALSE, TRUE , 4);
+
+        btn = gtk_radio_button_new_with_label_from_widget(GTK_RADIO_BUTTON(btn),
+                        _("Place external monitor to the left of laptop LCD"));
+        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(QUICK_PLACEMENT_LEFT) );
         gtk_box_pack_start( GTK_BOX(vbox), btn, FALSE, TRUE , 4);
 
         btn = gtk_radio_button_new_with_label_from_widget(GTK_RADIO_BUTTON(btn),
                         _("Place external monitor to the right of laptop LCD"));
-        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(4) );
+        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(QUICK_PLACEMENT_RIGHT) );
         gtk_box_pack_start( GTK_BOX(vbox), btn, FALSE, TRUE , 4);
 
         btn = gtk_radio_button_new_with_label_from_widget(GTK_RADIO_BUTTON(btn),
                         _("Place external monitor above of laptop LCD"));
-        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(5) );
+        g_signal_connect( btn, "clicked", G_CALLBACK(on_quick_option), GINT_TO_POINTER(QUICK_PLACEMENT_ABOVE) );
         gtk_box_pack_start( GTK_BOX(vbox), btn, FALSE, TRUE , 4);
 
         gtk_notebook_append_page( GTK_NOTEBOOK(notebook), vbox, gtk_label_new( _("Quick Options") ) );
